@@ -14,7 +14,8 @@ import java.math.BigDecimal;
 public class Order {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.AUTO) we were getting relation "t_orders_seq" does not exist
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String orderNumber;
     private String skuCode;

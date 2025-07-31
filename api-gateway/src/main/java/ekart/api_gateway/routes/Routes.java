@@ -29,7 +29,7 @@ public class Routes {
     @Bean
     RouterFunction<ServerResponse> orderServiceRoutes() {
 
-        return GatewayRouterFunctions.route("product_service")
+        return GatewayRouterFunctions.route("order_service")
                 .route(RequestPredicates.path("/api/order"), HandlerFunctions.http("http://localhost:4001"))
                 .build();
     }
@@ -38,7 +38,7 @@ public class Routes {
     @Bean
     RouterFunction<ServerResponse> notificationServiceRoutes() {
 
-        return GatewayRouterFunctions.route("product_service")
+        return GatewayRouterFunctions.route("inventory_service")
                 .route(RequestPredicates.path("/api/inventory"), HandlerFunctions.http("http://localhost:4002"))
                 .build();
     }

@@ -1,7 +1,6 @@
-package ekart.order_service.client;
+package ekart.order_service.config;
 
-import io.micrometer.observation.ObservationRegistry;
-import org.springframework.beans.factory.annotation.Autowired;
+import ekart.order_service.client.InventoryClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

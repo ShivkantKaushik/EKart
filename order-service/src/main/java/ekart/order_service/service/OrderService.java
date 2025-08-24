@@ -2,9 +2,9 @@ package ekart.order_service.service;
 
 import ekart.order_service.client.InventoryClient;
 import ekart.order_service.dto.OrderRequest;
-import ekart.order_service.event.OrderPlacedEvent;
 import ekart.order_service.model.Order;
 import ekart.order_service.repository.OrderRepository;
+import ekart.shared.order.event.OrderPlacedEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,11 @@
-package ekart.notification_service.order;
+package ekart.shared.order.event;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
-public class OrderPlacedEvent {
+@AllArgsConstructor
+@NoArgsConstructor
+public class OrderPlacedEvent implements OrderEvent {
 
     private String orderNumber;
     private String email;
